@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+h1, h3{
+    color: rgb(101, 158, 211);
+}
+
+.board {
+    background-color: rgb(124, 109, 109);
+}
+
+table {
+    margin: auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+.hidden {
+    color: transparent;
+}
