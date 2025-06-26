@@ -3,7 +3,8 @@ body {
     background-color: rgb(242, 242, 242);
 }
 
-h1,h3 {
+h1,
+h3 {
     color: rgb(101, 158, 211);
 }
 
@@ -47,7 +48,7 @@ table {
     /* left: calc(50% - 150px); */
 }
 
-.restart-btn{
+.restart-btn {
     margin-top: 20px;
     font-size: 25px;
     background: none;
@@ -59,17 +60,20 @@ table {
     border-radius: 5px;
     background-color: rgb(62, 96, 176);
     color: aliceblue;
+    height: 25px;
 }
 
-td{
+td {
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .dark {
-margin-top: 10px;
-border-radius: 5px;
-background-color: rgb(62, 96, 176);
-color: aliceblue;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(62, 96, 176);
+    color: aliceblue;
+    height: 25px;
 }
 
 .lives {
@@ -82,7 +86,7 @@ color: aliceblue;
     border: none;
 }
 
-.hint-marked{
+.hint-marked {
     background-color: rgb(255, 255, 96);
 }
 
@@ -97,4 +101,23 @@ color: aliceblue;
     border-radius: 5px;
     background-color: rgb(132, 168, 253);
     color: rgb(18, 34, 47);
+    height: 25px;
+}
+
+.safe-cell {
+    background-color: rgb(74, 206, 250);
+}
+
+.hint-clicked {
+    color: aliceblue;
+    background-color: rgb(176, 176, 176);
+}
+
+.dark:hover,.level-btn:hover,.safe:hover{
+    background-color: #89c5fa;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: #9d9d9d;
 }
