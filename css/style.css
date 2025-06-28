@@ -5,7 +5,7 @@ body {
 
 h1,
 h3 {
-    color: rgb(101, 158, 211);
+    color: rgb(62, 96, 176);
 }
 
 .board {
@@ -68,7 +68,10 @@ td {
     cursor: pointer;
 }
 
-.dark {
+.dark,
+.mega-hint,
+.manually-create,
+.eliminate-mines {
     margin-top: 10px;
     border-radius: 5px;
     background-color: rgb(62, 96, 176);
@@ -113,11 +116,31 @@ td {
     background-color: rgb(176, 176, 176);
 }
 
-.dark:hover,.level-btn:hover,.safe:hover{
+.dark:hover,
+.level-btn:hover,
+.safe:hover,
+.mega-hint:hover,
+.manually-create:hover,
+.eliminate-mines:hover {
     background-color: #89c5fa;
     cursor: pointer;
 }
 
-td:hover{
+td:hover {
     background-color: #9d9d9d;
+}
+
+.restart-btn:hover,
+.hints:hover {
+    cursor: pointer;
+}
+
+.megaHintClicked {
+    color: aliceblue;
+    background-color: rgb(176, 176, 176);
+}
+
+.best-score {
+    margin: 20px;
+    font-size: 20px;
 }

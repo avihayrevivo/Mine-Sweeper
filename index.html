@@ -10,7 +10,9 @@
     <h1>Mine Sweeper</h1>
     <h3>Avihay Revivo</h3>
     <button class="dark" onclick="darkMode()">Dark Mode</button>
-    <div>
+    <button class="manually-create" onclick="manuallyCreate()">Manually Create</button>
+    <button class="eliminate-mines" onclick="eliminateMines(gBoard)">Eliminate Mines</button>
+    <div class="hint-btns">
         <button class="hints" onclick="showHints(this)">💡</button>
         <button class="hints" onclick="showHints(this)">💡</button>
         <button class="hints" onclick="showHints(this)">💡</button>
@@ -18,6 +20,7 @@
     <h3 class="lives"></h3>
     <h2 class="timer">Time: <span>0.000</span>s</h2>
     <button class="safe" onclick="safeClick(gBoard)">Safe Click</button>
+    <button class="mega-hint" onclick="megaHintBtn()">Mega Hint</button>
 
     <table>
         <tbody class="board"></tbody>
@@ -29,6 +32,8 @@
     <button class="level-btn" onclick="restartLevel(this)">Medium</button>
     <button class="level-btn" onclick="restartLevel(this)">Hard</button>
     <button class="level-btn" onclick="restartLevel(this)">Legend</button>
+
+    <div class="best-score">Best Score: <span></span> </div>
 
     <div class="modal">
         <h3 class="msg"></h3>
